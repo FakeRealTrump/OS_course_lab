@@ -40,7 +40,7 @@ public:
 
 ---
 
-### how to create a history feature
+### how to implement a history feature
 
 Firstly, we will need a cycle list to store the lastest 10 command in memory. This could make some feature possible to be implement later. (Eg: print the lastest 10 command, execute the lastest command)
 

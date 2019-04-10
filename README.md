@@ -1,6 +1,5 @@
 ﻿# Mannul for lab1: UNIX Shell with History Feature
 
-标签（空格分隔）： 未分类
 
 ---
 

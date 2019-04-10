@@ -125,5 +125,12 @@ void historyList::ExecuteLasteatCommand()
 }
 ```
 
+---
+
+### How about complete and realease?
+
+The project is build and orgnazied automatically in Visual Studio, (but complete and linked on a remote ubuntu host), so there is no makefile in the project.But a realeased  executeable file is in path "OS_course_lab\bin\x64\Debug".The file should be able to run on linux well.
+
+In addition, the whole project is realeased on [github](https://github.com/devoteasecond/OS_course_lab1), you could get it from https://github.com/devoteasecond/OS_course_lab1.git
 
 

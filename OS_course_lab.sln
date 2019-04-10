@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OS_course_lab", "OS_course_lab\OS_course_lab.vcxproj", "{C1BC4598-0434-4D0F-97D7-EBD515DFBE5D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qu_lab1", "qu_lab1\qu_lab1.vcxproj", "{C1BC4598-0434-4D0F-97D7-EBD515DFBE5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

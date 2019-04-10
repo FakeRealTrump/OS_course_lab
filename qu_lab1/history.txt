@@ -1,0 +1,31 @@
+1: date
+2: whois
+3: dir -l /
+4: dir -l / &
+5: dir -l /
+6: dir -l /
+7: dir /
+8: dir -l /
+9: dir -l /home
+10: dir -l /
+11: dir -l /
+12: dir -l /
+13: dir -l /
+14: dir -l /
+15: dir -l /home
+16: dir -l /
+17: dir -l
+18: dor -; /
+19: dir -l /
+20: dir -l /home
+21: date
+22: date
+23: who
+24: dir -l /home
+25: dir -l /
+26: cat history.txt
+27: whois history
+28: whois man
+29: whois root
+30: whereis man
+31: ping -d -f -r www.baidu.com

@@ -88,6 +88,7 @@
     <ClInclude Include="historyShell.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="history.txt" />
     <Text Include="makefile" />
   </ItemGroup>
   <ItemDefinitionGroup />

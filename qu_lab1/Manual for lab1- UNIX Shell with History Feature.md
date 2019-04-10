@@ -127,9 +127,9 @@ void historyList::ExecuteLasteatCommand()
 
 ---
 
-### How about Compiling?
+### How about Compiling and testing?
 
-If you want to compile the project by yourself, just run "make" in path "qu_lab1". But an executable file is also released on the github page.(The released version is built by Visual Studio automatically, built in very complex rules)
+If you want to compile the project by yourself, just run "make" in path "qu_lab1". But an executable file is also released on the github page.(The released version is built by Visual Studio automatically, built in very complex rules).A simple history.txt is also provided in path "qu_lab1", contain 30 history command.
 
 In addition, the whole project is released on [github](https://github.com/devoteasecond/OS_course_lab), you could get it from https://github.com/devoteasecond/OS_course_lab.git
 

@@ -1,4 +1,4 @@
-﻿# Mannul for lab1: UNIX Shell with History Feature
+﻿# Manual for lab1: UNIX Shell with History Feature
 
 
 ---
@@ -9,13 +9,13 @@ The project has two parts, the first one is to create a child thread execute com
 
 The first part of project is the base of the second part. So I upload part two as one single project.
 
-Some pesedu code is as following to show my design:
+I'll show my design in following context.
 
 ---
 
 ### how to create a sub-thread to execute normal command ("ls", "dir"...):
 
-I designed a command class, which could be constructed by recieving a string or char[] (only a construct function receive string is enough, on account of a char[] would be implicitly converted to a string), the command and args will be split, and stored in some high-level class instead of simple char[]. Then, when calling method command::execute(), execute() will allocate some memory space to store temporary variable which will be arguments of execvp().After fork(), the sub-thread would call execvp() to execute the origin command, and the parent thread (main thread) will block itself until sub-thread has died, or go on without caring about sub-thread, depending on the field neadtowatit.In the main thread, just before quitting execute(), execute() will also call doCleanJobs() to make sure the memory space of temporary variable will be freed.
+I designed a command class, which could be constructed by receiving a string or char[] (only a construct function receive string is enough, on account of a char[] would be implicitly converted to a string), the command and args will be split, and stored in some high-level class instead of simple char[]. Then, when calling method command::execute(), execute() will allocate some memory space to store temporary variable which will be arguments of execvp().After fork(), the sub-thread would call execvp() to execute the origin command, and the parent thread (main thread) will block itself until sub-thread has died, or go on without caring about sub-thread, depending on the field neadtowatit.In the main thread, just before quitting execute(), execute() will also call doCleanJobs() to make sure the memory space of temporary variable will be freed.
 ```
 class command{
 private:
@@ -47,7 +47,7 @@ Firstly, we will need a cycle list to store the lastest 10 command in memory. Th
 ```
 cycleList<command> list;
 ```
-Then, we'll nead another class, to hold the list, and handle operating like reading history command from file, write lastest history command to file, deal with diffirent format string, and so on... A huge class named historyList is designed as following.
+Then, we'll nead another class, to hold the list, and handle operating like reading history command from file, write lastest history command to file, deal with different format string, and so on... A huge class named historyList is designed as following.
 ```
 class historyList {
 private:
@@ -77,7 +77,7 @@ public:
 ```
 The most important interface is Recievecommand(string), it receives a command as format of string, record it , writes it to the history file, construct a command class and inserts it into list.
 
-There're two private method, EncrypyCommandWithIndex(string) and MakeCommandWithIndex(string).They're used to format the string into two style.
+There're two private methods, EncrypyCommandWithIndex(string) and MakeCommandWithIndex(string). They're used to format the string into two style.
 
 ```
 //the origin linux command look likes this
@@ -88,7 +88,7 @@ dir -l /home
 
 ---
 
-### got a shell with history feature, supporting our customed command
+### got a shell with history feature, supporting our customize command
 
 Finally, we need a class to handle every input line, decide to call a special interface of historyList, or transmit the input line to  Recievecommand(string), or just quit our program.
 So, the class historyShell is designed.
@@ -108,7 +108,7 @@ The method handleCommand() will be called in main(), and take over stdin, waitin
 
 ### Exception handle?
 
-The program is devided to three level by the three class. Every class make sure handle exception on its level, and high-level class called an interface from low-level dont care about whether there will be a exception, and low-level class's method being called  dont care about anything wrong in arguements too.For example, historyList has a interface for execute our customed command !!.It'll handle the situation if there is no history command, won't transmit a wrong argument to low-level.
+The program is divided into three level by the three class. Every class make sure handle exception on its level, and high-level class called an interface from low-level dont care about whether there will be a exception, and low-level class's method being called  dont care about anything wrong in arguements too.For example, historyList has a interface for execute our customize command !!.It'll handle the situation if there is no history command, won't transmit a wrong argument to low-level.
 
 ```
 void historyList::ExecuteLasteatCommand()
@@ -127,10 +127,10 @@ void historyList::ExecuteLasteatCommand()
 
 ---
 
-### How about complete and realease?
+### How about Compiling?
 
-The project is build and orgnazied automatically in Visual Studio, (but complete and linked on a remote ubuntu host), so there is no makefile in the project.But a realeased  executeable file is in path "OS_course_lab\bin\x64\Debug".The file should be able to run on linux well.
+If you want to compile the project by yourself, just run "make" in path "qu_lab1". But an executable file is also released  in path "qu_lab1\bin\x64\Debug".(The released version is built by Visual Studio automatically, built in very complex rules)
 
-In addition, the whole project is realeased on [github](https://github.com/devoteasecond/OS_course_lab1), you could get it from https://github.com/devoteasecond/OS_course_lab1.git
+In addition, the whole project is released on [github](https://github.com/devoteasecond/OS_course_lab), you could get it from https://github.com/devoteasecond/OS_course_lab.git
 
 

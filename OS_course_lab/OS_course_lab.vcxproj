@@ -75,9 +75,20 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <ItemGroup>
+    <ClCompile Include="command.cpp" />
+    <ClCompile Include="historyList .cpp" />
+    <ClCompile Include="historyList.cpp" />
+    <ClCompile Include="historyShell.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="command.h" />
+    <ClInclude Include="cycleList.h" />
+    <ClInclude Include="historyList .h" />
+    <ClInclude Include="historyShell.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="makefile.txt" />
   </ItemGroup>
   <ItemDefinitionGroup />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -2,32 +2,54 @@
 #include<iostream>
 #include<string>
 #include<fstream>
-class FileExamine
-{
-public:
-	FileExamine() = default;
-	FileExamine(std::string FilePath);
-	virtual ~FileExamine() = default;
-	virtual void examword(std::string Word) = 0;
-protected:
-	std::ifstream readfrom;
-};
+#include<regex>
 
-FileExamine::FileExamine(std::string FilePath)
-{
-	readfrom.open(FilePath);
-	
+namespace FileEx {
+	using namespace std;
+	class FileExamine
+	{
+	public:
+		FileExamine() = default;
+		FileExamine(string FilePath);
+		virtual ~FileExamine() = default;
+		virtual void examword(string Word) {};
+		static bool checkWord(string Sentence, string Word);
+		void readyForNextExam();
+	protected:
+		ifstream readfrom;
+	};
 
-	if (!readfrom.is_open())
+	inline FileExamine::FileExamine(string FilePath)
 	{
-		std::cout << "Error opening " << FilePath << " for input" << std::endl;
+		readfrom.open(FilePath);
+
+		if (!readfrom.is_open())
+		{
+			cout << "Error opening " << FilePath << " for input" << endl;
+		}
+		else
+		{
+			cout << "open:" << FilePath << endl;
+		}
 	}
-	else
+
+	inline bool FileExamine::checkWord(string Sentence, string Word)
 	{
-		std::cout << "open:" << FilePath << std::endl;
+		string expression("[^0-9a-zA-Z](" + Word + ")[^0-9a-zA-Z]");
+		regex pattern(expression, regex::icase);
+		if (regex_search(Sentence, pattern))
+		{
+			return true;
+		}
+		return false;
 	}
+
+	inline void FileExamine::readyForNextExam()
+	{
+		readfrom.clear();
+		readfrom.seekg(0, ios::beg);
+	}
+
 }
-
-
 
 

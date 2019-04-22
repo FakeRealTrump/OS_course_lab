@@ -78,17 +78,32 @@
     <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="shmtest.cpp" />
+    <ClCompile Include="pipetest.cpp" />
+    <ClCompile Include="sockettest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="ANNA_KARENINA.txt" />
     <Text Include="big.txt" />
+    <Text Include="makefile" />
+    <Text Include="test.sh" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FileExamine.h" />
+    <ClInclude Include="FileExamineFactory.h" />
     <ClInclude Include="FileExamine_pipe_impl.h" />
+    <ClInclude Include="FileExamine_shm_impl.h" />
+    <ClInclude Include="FileExamine_socket_impl.h" />
   </ItemGroup>
-  <ItemDefinitionGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <AdditionalOptions>-lrt %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <ClCompile />
+    <ClCompile>
+      <AdditionalOptions>-lrt -pthread %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
 </Project>

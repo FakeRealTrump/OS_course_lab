@@ -1,14 +1,14 @@
 #include <cstdio>
 #include<vector>
-#include"FileExamine_pipe_impl.h"
-
-using namespace std;
+#include"FileExamineFactory.h"
+using namespace  FileEx;
 int main(int argc, char* argv[])
 {
-	if (argc < 3) {
+	FileExamineFactory factory;
+	if (argc<3) {
 		printf("hello from qu_lab3!\n");
-		FileExamine_pipe_impl test("ANNA_KARENINA.txt");
-		test.examword("she");
+		auto test = (factory.create(SOCKET, "ANNA_KARENINA.txt"));
+		test->examword("she");
 		return 0;
 	}
 	else

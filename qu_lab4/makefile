@@ -16,7 +16,7 @@ LKFLAGES:= -Wl,-z,now -Wl,-z,relro -Wl,-z,noexecstack -Wl,--no-undefined -pthrea
 objects := main.o
 
 all: $(objects)
-	g++ $(LKFLAGES) $(objects) -o "./qu_lab2_Multi-threadSorting"
+	g++ $(LKFLAGES) $(objects) -o "./qu_lab4"
 
 $(objects): %.o: %.cpp
 	$(GCC) -c $(CPPFLAGES) $< -o $@

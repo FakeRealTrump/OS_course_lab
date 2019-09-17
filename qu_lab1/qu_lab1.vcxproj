@@ -86,10 +86,14 @@
     <ClInclude Include="cycleList.h" />
     <ClInclude Include="historyList .h" />
     <ClInclude Include="historyShell.h" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="history.txt" />
     <Text Include="makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="qu_lab1.rc" />
   </ItemGroup>
   <ItemDefinitionGroup />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

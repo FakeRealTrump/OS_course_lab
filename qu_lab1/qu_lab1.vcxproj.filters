@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="command.cpp" />
+    <ClCompile Include="historyList.cpp" />
+    <ClCompile Include="historyShell.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="command.h" />
+    <ClInclude Include="cycleList.h" />
+    <ClInclude Include="historyList .h" />
+    <ClInclude Include="historyShell.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="history.txt" />
+    <Text Include="makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="qu_lab1.rc" />
+  </ItemGroup>
+</Project>

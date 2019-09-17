@@ -13,8 +13,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qu_lab3_IPC", "qu_lab3\qu_l
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qu_lab4_ContiguousMemoryAllocation", "qu_lab4\qu_lab4.vcxproj", "{B5555856-AE5A-452A-A181-EDB5792899CE}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qu_lab5_pageTranslate", "..\lab5\lab5\lab5.vcxproj", "{D6E56A9E-64EB-4342-BCFD-03462F231B8B}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "实验要求与报告", "实验要求与报告", "{A2D09BE3-C58C-4C9C-856A-B827B8E59DC6}"
 	ProjectSection(SolutionItems) = preProject
 		qu_lab1\Lab01.pdf = qu_lab1\Lab01.pdf
@@ -34,6 +32,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "实验要求与报告", "�
 		实验要求与报告\Lab5报告.pdf = 实验要求与报告\Lab5报告.pdf
 		qu_lab1\Manual for lab1- UNIX Shell with History Feature.md = qu_lab1\Manual for lab1- UNIX Shell with History Feature.md
 	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qu_lab5_pageTranslate", "qu_lab5\lab5\lab5.vcxproj", "{D6E56A9E-64EB-4342-BCFD-03462F231B8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

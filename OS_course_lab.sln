@@ -33,8 +33,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "实验要求与报告", "�
 		qu_lab1\Manual for lab1- UNIX Shell with History Feature.md = qu_lab1\Manual for lab1- UNIX Shell with History Feature.md
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qu_lab5_pageTranslate", "qu_lab5\lab5\lab5.vcxproj", "{D6E56A9E-64EB-4342-BCFD-03462F231B8B}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -127,18 +125,6 @@ Global
 		{B5555856-AE5A-452A-A181-EDB5792899CE}.Release|x64.Build.0 = Release|x64
 		{B5555856-AE5A-452A-A181-EDB5792899CE}.Release|x86.ActiveCfg = Release|x86
 		{B5555856-AE5A-452A-A181-EDB5792899CE}.Release|x86.Build.0 = Release|x86
-		{D6E56A9E-64EB-4342-BCFD-03462F231B8B}.Debug|ARM.ActiveCfg = Debug|Win32
-		{D6E56A9E-64EB-4342-BCFD-03462F231B8B}.Debug|ARM64.ActiveCfg = Debug|Win32
-		{D6E56A9E-64EB-4342-BCFD-03462F231B8B}.Debug|x64.ActiveCfg = Debug|x64
-		{D6E56A9E-64EB-4342-BCFD-03462F231B8B}.Debug|x64.Build.0 = Debug|x64
-		{D6E56A9E-64EB-4342-BCFD-03462F231B8B}.Debug|x86.ActiveCfg = Debug|Win32
-		{D6E56A9E-64EB-4342-BCFD-03462F231B8B}.Debug|x86.Build.0 = Debug|Win32
-		{D6E56A9E-64EB-4342-BCFD-03462F231B8B}.Release|ARM.ActiveCfg = Release|Win32
-		{D6E56A9E-64EB-4342-BCFD-03462F231B8B}.Release|ARM64.ActiveCfg = Release|Win32
-		{D6E56A9E-64EB-4342-BCFD-03462F231B8B}.Release|x64.ActiveCfg = Release|x64
-		{D6E56A9E-64EB-4342-BCFD-03462F231B8B}.Release|x64.Build.0 = Release|x64
-		{D6E56A9E-64EB-4342-BCFD-03462F231B8B}.Release|x86.ActiveCfg = Release|Win32
-		{D6E56A9E-64EB-4342-BCFD-03462F231B8B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

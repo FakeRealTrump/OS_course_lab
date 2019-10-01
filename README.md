@@ -1,5 +1,20 @@
 # OS_course_lab
 ---
-This repo is my homework of OS course
----
-[lab1: qu_lab1](https://github.com/devoteasecond/OS_course_lab/blob/master/qu_lab1/Manual%20for%20lab1-%20UNIX%20Shell%20with%20History%20Feature.md)
+我在2019年春季学期，在北交大上HH老师的操作系统课程，这个repo初建立是为了熟悉VS+git的操作，并管理自己的实验代码。现在我终于有时间整理出所有的报告和代码，上传到github上，供后人参考。HH老师的教学水平在所有老师中可谓鸡立鹤群，然而实验难度又是前所未闻，倒不是说他的实验真的难到做不出来，而是往往布置的太快太早，学生没有足够的基础就被布置了实验，只好面向百度/学长编程。所以我希望如果有后人能看到这个repo，可以通过阅读现成的代码和报告，更好地理解实验流程，写出自己的代码。
+
+整个学期有五次实验，所有实验要求和报告包含在<实验要求与报告>目录中
+  
+1. 带history功能的shell
+2. 基于fork和pipe的多进程编程
+3. 通过pipe，socket，shm进行进程间通信
+4. 模拟管理连续内存的申请，释放，紧缩
+5. 模拟页表，快表，缺页中断，实现读内存效果
+
+我向大家推荐我使用的开发方式是git + VS + VM(Ubuntu)
+Visual Studio具有强大的功能，在编写代码时的智能补全，代码高亮等功能不提，最重要的是，VS具有两个非常重要的功能。一个是内置git，编辑调试推送一气呵成。另一个是VS很容易支持在远程机器上编译，调试，部署代码。所以，我们只要开启虚拟机，在github上开个repo，配置好VS后，就根本不需要再离开VS界面，编码，编译，调试，使用命令行测试，推送运行正确的代码版本，全部可以轻松地使用VS来完成，不需要面对linux那可怜的小黑框框。
+
+VS-VM(Ubuntu)的配置可以参考[这个blog](https://blog.csdn.net/github_37687123/article/details/81179748)
+
+VS-git的配置可以参考[这个blog](https://blog.csdn.net/boonya/article/details/78750230)
+
+最后，请认真学习。
